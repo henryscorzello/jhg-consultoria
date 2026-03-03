@@ -78,19 +78,32 @@
 
         .nav-links a:hover { color: var(--sky-blue); }
 
+        /* Botão Principal Melhorado (Falar com Especialista) */
         .btn-primary {
-            background-color: var(--navy-blue);
-            color: var(--white);
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: 600;
-            transition: background 0.3s;
-            border: none;
+            background-color: var(--accent-blue); /* Usando um azul mais vibrante */
+            color: #FFFFFF !important; /* Fonte branca forçada */
+            padding: 12px 28px;
+            border-radius: 30px; /* Bordas arredondadas estilo pílula */
+            font-weight: 700; /* Fonte mais forte */
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            border: 2px solid var(--accent-blue);
             cursor: pointer;
+            box-shadow: 0 4px 15px rgba(43, 108, 176, 0.3); /* Sombra azulada */
+            display: inline-block;
+            text-align: center;
         }
 
-        .btn-primary:hover { background-color: var(--accent-blue); color: var(--white); }
-
+        .btn-primary:hover { 
+            background-color: var(--navy-blue); /* Fica mais escuro no hover */
+            border-color: var(--navy-blue);
+            color: #FFFFFF !important; 
+            transform: translateY(-2px); /* Efeito de levantar */
+            box-shadow: 0 6px 20px rgba(10, 37, 64, 0.4);
+        }
+        
         /* Menu Mobile */
         .menu-toggle {
             display: none;
